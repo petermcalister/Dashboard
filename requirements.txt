@@ -1,0 +1,5 @@
+duckdb==0.10.2
+pandas==2.1.4  # Even if query functions return dicts, pandas is useful in callbacks
+plotly==5.18.0
+dash==2.15.0
+dash-bootstrap-components==1.5.0

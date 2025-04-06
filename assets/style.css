@@ -1,0 +1,137 @@
+/* Basic Dark Theme */
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: sans-serif;
+}
+
+/* Dropdown Styling */
+.Select, .Dropdown, .Select--multi, .Select-control {
+    background-color: #333333 !important;
+    color: #d4d4d4 !important;
+    border: 1px solid #555555 !important;
+}
+.Select-value-label, .Select-placeholder, .Select-value, .Select-menu-outer {
+    color: #d4d4d4 !important;
+}
+.Select-menu-outer {
+     background-color: #333333 !important;
+     border: 1px solid #555555 !important;
+}
+.Select .Select-option.is-focused {
+  background-color: #555555 !important;
+  color: #ffffff !important;
+}
+.Select .Select-option.is-selected {
+  background-color: #444444 !important;
+   color: #ffffff !important;
+}
+.Select-arrow {
+  border-color: #d4d4d4 transparent transparent !important;
+}
+.Select-clear {
+  color: #d4d4d4 !important;
+  font-size: 18px !important; /* Make clear 'x' more visible */
+}
+
+
+/* Button Styling */
+.Button, button, .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    margin-left: 5px; /* Add some space between buttons/dropdowns */
+}
+.Button:hover, button:hover, .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Input Styling (for bookmark prompt) */
+input[type=text] {
+  background-color: #333333;
+  color: #d4d4d4;
+  border: 1px solid #555555;
+  padding: 6px 10px;
+}
+
+
+/* Table Styling */
+.dash-table-container .dash-spreadsheet-container table {
+    background-color: #2a2a2a;
+    border-collapse: collapse; /* Ensures borders look right */
+}
+
+.dash-table-container .dash-spreadsheet-container table thead th {
+    background-color: #333333;
+    color: #e0e0e0;
+    text-align: left;
+    border: 1px solid #444444;
+    padding: 8px;
+}
+
+.dash-table-container .dash-spreadsheet-container table tbody td {
+    background-color: #2a2a2a;
+    color: #d4d4d4;
+    border: 1px solid #444444;
+    padding: 8px;
+}
+
+/* Table Pagination */
+.dash-table-container .previous-page,
+.dash-table-container .next-page,
+.dash-table-container .page-number,
+.dash-table-container .first-page,
+.dash-table-container .last-page {
+    background-color: #333333 !important;
+    border: 1px solid #555555 !important;
+    color: #d4d4d4 !important;
+    margin: 2px;
+}
+.dash-table-container .current-page {
+     background-color: #007bff !important;
+     color: white !important;
+     border: 1px solid #007bff !important;
+}
+
+
+/* Table Active Cell/Row */
+.dash-table-container .dash-spreadsheet-container table td.cell--selected,
+.dash-table-container .dash-spreadsheet-container table td.focused {
+    background-color: #007bff !important;
+    color: white !important;
+}
+.dash-spreadsheet tr:hover {
+  background-color: #383838 !important; /* Row hover effect */
+}
+
+
+/* Plotly Chart Styling */
+.plotly-graph-div {
+    background-color: #1e1e1e !important; /* Match body background */
+}
+/* More specific selector might be needed if the above doesn't work */
+.js-plotly-plot .plotly, .js-plotly-plot .plotly svg {
+     background-color: #1e1e1e !important;
+}
+
+
+/* General Layout Spacing */
+.dash-graph, .dash-table-container {
+    margin-bottom: 20px; /* Add space below charts and table */
+}
+
+.dbc .row {
+    margin-bottom: 15px; /* Space between rows */
+}
+
+/* Adjust dropdown width */
+.dbc .col-md-3 { /* Adjust based on your column setup */
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Make dropdowns take more width if needed */
+#sealDropDown, #workloadCategoyDropdown, #bookmarkDropdown {
+    width: 100%;
+}
